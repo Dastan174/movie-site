@@ -1,3 +1,4 @@
+import Movies from "../movies/Movies";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -24,6 +25,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Movies />
     </section>
   );
 };
