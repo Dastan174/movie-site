@@ -19,3 +19,12 @@ const MainRoutes = () => {
 };
 
 export default MainRoutes;
+
+// 1. Задача алынды
+// 2. git pull origin master
+// 3. задача кылынат
+// 4. git switch -c ветка
+// 5. git add .
+// 6. git commit -m "task"
+// 7. git push origin ветка
+// 8. github, compare and pull request
