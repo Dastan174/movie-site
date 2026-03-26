@@ -5,7 +5,7 @@ import type {
   IMoviesStore,
 } from "./types/types";
 import axios from "axios";
-import { API } from "../constants/temp";
+import { API } from "../constants/api";
 
 export const useMovies = create<IMoviesStore>((set) => ({
   movies: [],
