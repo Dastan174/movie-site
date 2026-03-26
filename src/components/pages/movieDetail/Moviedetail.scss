@@ -1,0 +1,50 @@
+#movieDetail {
+  height: 100vh;
+  background: #7c81d6;
+  background: linear-gradient(
+    5deg,
+    rgba(124, 129, 214, 1) 0%,
+    rgba(98, 134, 217, 1) 44%,
+    rgba(65, 71, 105, 1) 100%
+  );
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 20px;
+  .movieDetail {
+    padding-top: 60px;
+    .list {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      img {
+        width: 400px;
+        height: 600px;
+        border-radius: 10px;
+        -webkit-box-shadow: 1px 1px 13px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 1px 1px 13px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 1px 1px 13px 10px rgba(0, 0, 0, 0.4);
+      }
+      .text {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+        h1 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
+#carouselCard {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+    overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 10px;
+  .Card {
+    display: flex;
+    gap: 10px;
+  }
+}
