@@ -1,0 +1,42 @@
+.adminCard {
+  -webkit-box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  width: 280px;
+  img {
+    width: 280px;
+    height: 290px;
+    border-radius: 10px 10px 0 0;
+  }
+  .info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .btns {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+
+    button:first-child {
+      background: red;
+    }
+    button:nth-child(2) {
+      background: green;
+    }
+    button:last-child {
+      background: rgb(225, 191, 128);
+    }
+  }
+}
