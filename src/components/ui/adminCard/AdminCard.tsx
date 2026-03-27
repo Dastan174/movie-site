@@ -1,54 +1,8 @@
 import "./AdminCard.scss";
-import { useForm } from "react-hook-form";
-
-import { toast, ToastContainer } from "react-toastify";
-
-interface IDataMovie {
-  title: string;
-  year: number;
-  description: string;
-  image: string;
-}
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { FiEdit } from "react-icons/fi";
 
 const AdminCard = () => {
-  const {
-    handleSubmit,
-    register,
-    reset,
-    formState: { errors },
-  } = useForm<IDataMovie>();
-
-  const handleData = (data: IDataMovie) => {
-    console.log(data);
-    reset();
-  };
-
-  const onError = (errors: any) => {
-    if (errors.title?.message) {
-      toast.error(errors.title.message, {
-        position: "top-right",
-        autoClose: 3000,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "pink",
-      });
-      if (errors.image.message) {
-        toast.error(errors.image.message, {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "pink",
-        });
-      }
-    }
-  };
   return (
     <div className="adminCard">
       <img
@@ -56,21 +10,27 @@ const AdminCard = () => {
         alt=""
       />
       <div className="info">
-        <h3>zootopia 2</h3>
-        <h5>22.03.2022</h5>
-      </div>
-      <div className="btns">
-        <button>delete</button>
-        <button>edit</button>
-        <button>details-page</button>
+        <h1>zootopia 2</h1>
+        <h3>22.03.2022</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+          nesciunt eaque sequi! Exercitationem, ea eligendi! Modi id accusamus
+          voluptates, ipsam laborum eveniet esse, recusandae aspernatur
+          similique, tempore nam. Recusandae tempore voluptas nesciunt quis
+          esse, autem accusamus mollitia ea dolore vero reprehenderit neque?
+          Beatae quis laudantium nobis! Sint tempore enim recusandae!
+        </p>
+        <div className="btns">
+          <button>
+            <RiDeleteBin6Line /> delete
+          </button>
+          <button>
+            <FiEdit /> edit
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default AdminCard;
-//  <div className="btns">
-//         <button>delete</button>
-//         <button>edit</button>
-//         <button>details-page</button>
-//       </div>
