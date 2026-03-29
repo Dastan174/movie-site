@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
+import Favorites from "../components/pages/favorites/Favorites";
 
 const MainRoutes = () => {
   const routes = [
     { link: "/", element: "" },
-    { link: "/", element: "" },
+    { link: "/favorites", element: <Favorites /> },
   ];
   return (
     <Routes>
