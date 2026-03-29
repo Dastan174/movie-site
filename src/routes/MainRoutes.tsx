@@ -3,7 +3,6 @@ import Admin from "../components/pages/admin/Admin";
 import MovieDetail from "../components/pages/movieDetail/MovieDetail";
 import AdminMovies from "../components/pages/admin-movies/AdminMovies";
 import AdminEdit from "../components/pages/admin-edit/AdminEdit";
-import AdminCard from "../components/ui/adminCard/AdminCard";
 import Hero from "../components/pages/hero/Hero";
 
 const MainRoutes = () => {
@@ -12,7 +11,6 @@ const MainRoutes = () => {
     { link: "/admin", element: <Admin /> },
     { link: "/admin-movies", element: <AdminMovies /> },
     { link: "/admin-edit", element: <AdminEdit /> },
-    { link: "/adminCard", element: <AdminCard /> },
     { link: "/movieDetail/:id", element: <MovieDetail /> },
   ];
   return (

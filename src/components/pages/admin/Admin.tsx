@@ -10,12 +10,7 @@ interface IDataMovie {
 }
 
 const Admin = () => {
-  const {
-    handleSubmit,
-    register,
-    reset,
-    formState: { errors },
-  } = useForm<IDataMovie>();
+  const { handleSubmit, register, reset } = useForm<IDataMovie>();
 
   const handleData = (data: IDataMovie) => {
     console.log(data);
@@ -34,18 +29,18 @@ const Admin = () => {
         progress: undefined,
         theme: "pink",
       });
-      if (errors.image.message) {
-        toast.error(errors.image.message, {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "pink",
-        });
-      }
+    }
+    if (errors.image.message) {
+      toast.error(errors.image.message, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "pink",
+      });
     }
   };
   return (
