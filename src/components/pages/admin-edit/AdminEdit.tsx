@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import "./Admin.scss";
+import "./AdminEdit.scss";
 import { toast, ToastContainer } from "react-toastify";
 
 interface IDataMovie {
@@ -9,7 +9,7 @@ interface IDataMovie {
   image: string;
 }
 
-const Admin = () => {
+const AdminEdit = () => {
   const { handleSubmit, register, reset } = useForm<IDataMovie>();
 
   const handleData = (data: IDataMovie) => {
@@ -44,15 +44,15 @@ const Admin = () => {
     }
   };
   return (
-    <section id="admin">
+    <section id="admin-edit">
       <div className="container">
         <div className="admin">
           <img
-            src="https://i.pinimg.com/736x/22/aa/69/22aa695736d5ce576e85630152ecd8fb.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqFUUC4oDHmVx6Tz7-6oTEs4qwJ6onXWFJg&s"
             alt=""
           />
           <form onSubmit={handleSubmit(handleData, onError)} className="title">
-            <h1>Admin</h1>
+            <h1>Admin edit</h1>
 
             <input
               {...register("title", {
@@ -92,4 +92,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default AdminEdit;

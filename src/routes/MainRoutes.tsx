@@ -1,13 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "../components/pages/home/Home";
 import Admin from "../components/pages/admin/Admin";
 import MovieDetail from "../components/pages/movieDetail/MovieDetail";
+import AdminMovies from "../components/pages/admin-movies/AdminMovies";
+import AdminEdit from "../components/pages/admin-edit/AdminEdit";
+import Hero from "../components/pages/hero/Hero";
 
 const MainRoutes = () => {
   const routes = [
-    { link: "/", element: <Home/> },
-    { link: "/admin", element: <Admin/> },
-    { link: "/movieDetail", element: <MovieDetail/> },
+    { link: "/", element: <Hero /> },
+    { link: "/admin", element: <Admin /> },
+    { link: "/admin-movies", element: <AdminMovies /> },
+    { link: "/admin-edit", element: <AdminEdit /> },
+    { link: "/movieDetail/:id", element: <MovieDetail /> },
   ];
   return (
     <Routes>

@@ -36,27 +36,13 @@ const MovieDetail = () => {
       </section>
       <section id="carouselCard">
         <h2>Similar Movies</h2>
-          <div className="Card">
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-            <CarouselCard />
-          </div>
+        <div className="Card">
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+          <CarouselCard />
+        </div>
       </section>
     </>
   );
