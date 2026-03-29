@@ -20,6 +20,15 @@ const Movies = () => {
               <CarouselCard />
               <CarouselCard />
               <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
+              <CarouselCard />
             </div>
           </div>
         </div>
