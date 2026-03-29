@@ -1,0 +1,48 @@
+.favoriteCard {
+  -webkit-box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 8px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  width: 230px;
+  height: 380px;
+  background: #1c1b1b;
+  position: relative;
+  transition: 0.8s;
+  &:hover {
+    transform: scale(1.02);
+  }
+  img {
+    width: 230px;
+    height: 290px;
+    border-radius: 10px 10px 0 0;
+  }
+  .info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+    button {
+      display: none;
+      padding: 6px 7px;
+      background: rgb(0, 0, 0);
+      color: white;
+      border-radius: 50%;
+      color: white;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: 2px solid rgb(3, 50, 3);
+      &:hover {
+        background: red;
+        color: black;
+      }
+    }
+  }
+}
