@@ -1,0 +1,29 @@
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerLogo {
+  color: pink;
+  font-size: 20px;
+}
+
+.headerNav {
+  display: flex;
+  gap: 20px;
+}
+
+.headerNav a {
+  color: white;
+  font-size: 16px;
+}
