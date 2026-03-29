@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import type { IGetOneResponse, IGetResponse, IMoviesStore } from "./types/type";
 import axios from "axios";
-import { API } from "../constants/api";
+import { API } from "../constants/API";
 
 export const useMovies = create<IMoviesStore>((set) => ({
   movies: [],
