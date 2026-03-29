@@ -1,6 +1,6 @@
-import "./Favorites.scss";
 import FavoriteCard from "../../ui/favorites/FavoriteCard";
-import RecomMovies from "../recommendMovies/RecomMovies";
+import RecomMovies from "../recommendMovies/RecommendMovies";
+import "./Favorites.scss";
 const Favorites = () => {
   return (
     <>

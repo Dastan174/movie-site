@@ -1,17 +1,23 @@
-import "./RecommendCard..scss";
-const RecommendCard = () => {
+import "./RecomMovies.scss";
+
+import RecommendCard from "./../../ui/recommendCard/RecommendCard";
+const RecomMovies = () => {
   return (
-    <div className="recommendCard">
-      <img
-        src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21930521_p_v8_ab.jpg"
-        alt=""
-      />
-      <div className="info">
-        <h2>In our prime</h2>
-        <p>2010</p>
+    <section id="recommendations">
+      <div className="container">
+        <div className="recommendations">
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+          <RecommendCard />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default RecommendCard;
+export default RecomMovies;
